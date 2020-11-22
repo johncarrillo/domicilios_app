@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "836455967126",
+    "firebase_url": "https://app-domicilios-e29b4.firebaseio.com",
+    "project_id": "app-domicilios-e29b4",
+    "storage_bucket": "app-domicilios-e29b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836455967126:android:70c7505bbf4d76950395b7",
+        "android_client_info": {
+          "package_name": "co.edu.ufps.appdomicilios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836455967126-hctuea5khef0cicesg9gkb9le839p3hp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpDqnEXdVEsV33bRA8gPOcncDYrKe5eBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836455967126-hctuea5khef0cicesg9gkb9le839p3hp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836455967126:android:25a8034ee69f54320395b7",
+        "android_client_info": {
+          "package_name": "co.edu.ufps.domicilios_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836455967126-hctuea5khef0cicesg9gkb9le839p3hp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpDqnEXdVEsV33bRA8gPOcncDYrKe5eBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836455967126-hctuea5khef0cicesg9gkb9le839p3hp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

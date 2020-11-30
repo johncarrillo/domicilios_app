@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Domicilios_app">
-        <activity android:name=".MenuRestaurant"></activity>
+        <activity android:name=".HistoryActivity"></activity>
+        <activity android:name=".ComentActivity" />
+        <activity android:name=".DireccionActivity" />
+        <activity android:name=".SalesCart" />
+        <activity android:name=".MenuRestaurant" />
         <activity
             android:name=".IndexActivity"
             android:label="@string/title_activity_index"

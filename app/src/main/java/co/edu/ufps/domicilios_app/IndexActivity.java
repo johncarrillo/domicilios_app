@@ -20,6 +20,7 @@ import androidx.appcompat.widget.Toolbar;
 public class IndexActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class IndexActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
+        floatingActionButton = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +48,12 @@ public class IndexActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goShoppingCar();
+            }
+        });
     }
 
     @Override
@@ -64,6 +72,11 @@ public class IndexActivity extends AppCompatActivity {
 
     public void goMenu(View view) {
         Intent intent = new Intent(this, MenuRestaurant.class);
+        startActivity(intent);
+    }
+
+    public void goShoppingCar() {
+        Intent intent = new Intent(this, SalesCart.class);
         startActivity(intent);
     }
 }

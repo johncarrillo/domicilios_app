@@ -4,22 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-public class MenuRestaurant extends AppCompatActivity {
+public class SalesCart extends AppCompatActivity {
 
-    private Button btnGoMenu;
+    private Button btnBuy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_restaurant);
-        this.btnGoMenu = findViewById(R.id.btnMenu);
+        setContentView(R.layout.activity_sales_cart);
     }
 
-    public void goComment(View view) {
-        Intent intent = new Intent(this, ComentActivity.class);
+    public void goAddress(View view) {
+        Intent intent = new Intent(this, DireccionActivity.class);
         startActivity(intent);
     }
 }

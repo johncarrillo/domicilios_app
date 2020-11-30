@@ -56,27 +56,20 @@
                             android:textAppearance="?attr/textAppearanceBody2"
                             android:textColor="?android:attr/textColorSecondary"
                             />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="comentarios..."
+                            android:onClick="goComment"
+                            android:textColor="@color/purple_700" />
+
                         <Button
                             android:id="@+id/textButton1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="+ Carrito"
                             style="@style/Widget.MaterialComponents.Button.TextButton"
-                            />
-                    </LinearLayout>
-
-                    <!-- Buttons -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:orientation="horizontal">
-                        <com.google.android.material.button.MaterialButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="8dp"
-                            android:text="Agregar"
-                            style="?attr/borderlessButtonStyle"
                             />
                     </LinearLayout>
 
@@ -126,6 +119,13 @@
                             android:textColor="?android:attr/textColorSecondary"
                             />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="comentarios..."
+                            android:onClick="goComment"
+                            android:textColor="@color/purple_700" />
                         <Button
                             android:id="@+id/textButton2"
                             android:layout_width="wrap_content"
@@ -196,6 +196,13 @@
                             android:textColor="?android:attr/textColorSecondary"
                             />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="comentarios..."
+                            android:onClick="goComment"
+                            android:textColor="@color/purple_700" />
                         <Button
                             android:id="@+id/textButton3"
                             android:layout_width="wrap_content"
@@ -265,6 +272,13 @@
                             android:textColor="?android:attr/textColorSecondary"
                             />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="comentarios..."
+                            android:onClick="goComment"
+                            android:textColor="@color/purple_700" />
                         <Button
                             android:id="@+id/textButton"
                             android:layout_width="wrap_content"

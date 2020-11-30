@@ -25,4 +25,11 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_index">index</string>
+    <string name="todo">TODO</string>
+    <string name="shopping_quality">cantidad</string>
+    <string name="txt_sales_address">Dirección</string>
+    <string name="txt_sales_cost_offered">Valor de Domicilio</string>
+    <string name="text_publish_offer">Publicar Oferta</string>
+    <string name="text_button_buy">Comprar</string>
+    <string name="text_history_publish">Publicar</string>
 </resources>

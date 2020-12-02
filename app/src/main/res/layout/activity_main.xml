@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
 
 
@@ -18,11 +20,15 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/icono_app"/>
+            android:src="@drawable/ic_food_delivery"
+            android:layout_marginVertical="24dp"/>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txt_login_user">
+            android:hint="@string/txt_login_user"
+            app:startIconDrawable="@drawable/ic_user"
+            android:layout_marginVertical="24dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textLoginUser"
                 android:layout_width="match_parent"
@@ -33,11 +39,16 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txt_login_password">
+            android:hint="@string/txt_login_password"
+            app:startIconDrawable="@drawable/ic_key"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:endIconMode="password_toggle">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textLoginPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,11 +58,13 @@
             android:layout_height="wrap_content"
             android:text="@string/sign_in"
             android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
             />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

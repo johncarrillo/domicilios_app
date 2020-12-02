@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DireccionActivity">
+    tools:context=".DireccionActivity"
+    android:paddingHorizontal="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,28 +18,44 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/direccion"></ImageView>
+            android:src="@drawable/ic_location"
+            android:layout_marginVertical="24dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txt_sales_address">
+            android:hint="Direccion"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginVertical="8dp">
+
             <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:id="@+id/textAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 />
+
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/txt_sales_cost_offered">
+            android:hint="Valor Domicilio"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginVertical="8dp">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textCostOffered"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/textCostOffered"
+                android:inputType="number"
                 />
+
         </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
         <Button
             android:id="@+id/btnPublishOffer"
@@ -47,5 +64,6 @@
             android:text="@string/text_publish_offer"
             android:layout_gravity="center"
             />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,16 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.List;
+
+import co.edu.ufps.domicilios_app.interfaces.ClienteAPI;
+import co.edu.ufps.domicilios_app.models.Cliente;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -24,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText textUser;
     TextInputEditText textPassword;
     Button btnSignIn;
+    Button btnListar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +48,38 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 signin(textUser.getText().toString(), textPassword.getText().toString());
+            }
+        });
+        this.btnListar = findViewById(R.id.btnListar);
+        this.btnListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"hola", Toast.LENGTH_SHORT);
+                listarClientes();
+            }
+        });
+    }
+
+    private void  listarClientes () {
+        Retrofit retrifit = new Retrofit.Builder().baseUrl("http://192.168.1.3:8081/")
+                .addConverterFactory(GsonConverterFactory.create()).build();
+        ClienteAPI clienteApi =  retrifit.create(ClienteAPI.class);
+        Call<List<Cliente>> call = clienteApi.listarClientes();
+        call.enqueue(new Callback<List<Cliente>>() {
+            @Override
+            public void onResponse(Call<List<Cliente>> call, Response<List<Cliente>> response) {
+                try {
+                    if (response.isSuccessful()) {
+                        List<Cliente> listaClientes = response.body();
+                    }
+                } catch (Exception e) {
+                    Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Cliente>> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "Error de Conexion", Toast.LENGTH_SHORT);
             }
         });
     }

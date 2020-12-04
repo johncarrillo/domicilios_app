@@ -74,6 +74,13 @@
                 android:layout_height="wrap_content"
                 android:onClick="createUser"
                 android:text="@string/txt_login_sign_up"/>
+            <Button
+                android:id="@+id/btnListar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listar"
+                android:layout_gravity="center"
+                />
         </LinearLayout>
     </LinearLayout>
 

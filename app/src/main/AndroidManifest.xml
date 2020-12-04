@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Domicilios_app"
         android:usesCleartextTraffic="true">
-        <activity android:name=".HistoryActivity"></activity>
+        <activity android:name=".DetallePedido"></activity>
+        <activity android:name=".HistoryActivity" />
         <activity android:name=".ComentActivity" />
         <activity android:name=".DireccionActivity" />
         <activity android:name=".SalesCart" />

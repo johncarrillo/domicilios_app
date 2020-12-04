@@ -16,5 +16,10 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_history_24px"
             android:title="@string/menu_historic" />
+
+        <item
+            android:id="@+id/nav_slidesdomi"
+            android:icon="@drawable/ic_moped_24px"
+            android:title="Modo Domicilio" />
     </group>
 </menu>

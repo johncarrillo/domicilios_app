@@ -17,6 +17,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import org.w3c.dom.DOMImplementation;
+
 public class IndexActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -42,7 +44,7 @@ public class IndexActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_slidesdomi)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -77,6 +79,11 @@ public class IndexActivity extends AppCompatActivity {
 
     public void goShoppingCar() {
         Intent intent = new Intent(this, SalesCart.class);
+        startActivity(intent);
+    }
+
+    public void goDomiMode() {
+        Intent intent = new Intent(this, Domi.class);
         startActivity(intent);
     }
 }

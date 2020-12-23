@@ -9,13 +9,12 @@ import android.widget.Button;
 
 public class MenuRestaurant extends AppCompatActivity {
 
-    private Button btnGoMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_restaurant);
-        this.btnGoMenu = findViewById(R.id.btnMenu);
+
     }
 
     public void goComment(View view) {

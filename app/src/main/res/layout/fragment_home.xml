@@ -6,238 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="247dp">
+        android:layout_height="wrap_content">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <ListView
+                android:id="@+id/listViewBussiness"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"></ListView>
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+        </LinearLayout>
 
-                        <!-- Media -->
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="194dp"
-                            app:srcCompat="@drawable/restaurante1"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="Local de Comidas Rapidas"
-                            />
+    </ScrollView>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-
-                            <!-- Title, secondary and supporting text -->
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Restauran el Buen Sabor"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="Comidas Rapidas"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:text="Nos ubicamos en la calle 1n 9a - 08"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary"
-                                />
-
-                        </LinearLayout>
-
-                        <!-- Buttons -->
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:orientation="horizontal">
-                            <com.google.android.material.button.MaterialButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="8dp"
-                                android:text="Ver Menu"
-                                android:onClick="goMenu"
-                                style="?attr/borderlessButtonStyle"
-                                />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <!-- Media -->
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="194dp"
-                            app:srcCompat="@drawable/restaurante2"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="Local de Comidas Rapidas"
-                            />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-
-                            <!-- Title, secondary and supporting text -->
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Restauran el Buen Sabor"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="Comidas Rapidas"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:text="Nos ubicamos en la calle 1n 9a - 08"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary"
-                                />
-
-                        </LinearLayout>
-
-                        <!-- Buttons -->
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:orientation="horizontal">
-                            <com.google.android.material.button.MaterialButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="8dp"
-                                android:text="Ver Menu"
-                                style="?attr/borderlessButtonStyle"
-                                />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <!-- Media -->
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="194dp"
-                            app:srcCompat="@drawable/restaurante3"
-                            android:scaleType="centerCrop"
-                            android:contentDescription="Local de Comidas Rapidas"
-                            />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
-
-                            <!-- Title, secondary and supporting text -->
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Restauran el Buen Sabor"
-                                android:textAppearance="?attr/textAppearanceHeadline6"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:text="Comidas Rapidas"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:text="Nos ubicamos en la calle 1n 9a - 08"
-                                android:textAppearance="?attr/textAppearanceBody2"
-                                android:textColor="?android:attr/textColorSecondary"
-                                />
-
-                        </LinearLayout>
-
-                        <!-- Buttons -->
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:orientation="horizontal">
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="8dp"
-                                android:text="Ver Menu"
-                                style="?attr/borderlessButtonStyle"
-                                android:id="@+id/btnMenu"
-                                />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </com.google.android.material.card.MaterialCardView>
-
-            </LinearLayout>
-
-        </ScrollView>
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

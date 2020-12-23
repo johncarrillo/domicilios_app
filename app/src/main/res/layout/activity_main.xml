@@ -16,6 +16,7 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="312dp"
         tools:layout_editor_absoluteY="312dp">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -87,14 +88,16 @@
                 android:layout_height="wrap_content"
                 android:onClick="createUser"
                 android:text="@string/txt_login_sign_up"/>
-            <Button
-                android:id="@+id/btnListar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Listar"
-                android:layout_gravity="center"
-                />
+
+
+
         </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listaEmpresas"></ListView>
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
